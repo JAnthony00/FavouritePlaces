@@ -16,10 +16,8 @@
 		302E4E1E282296F4008D0370 /* FavouritePlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E1D282296F4008D0370 /* FavouritePlacesTests.swift */; };
 		302E4E28282296F4008D0370 /* FavouritePlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E27282296F4008D0370 /* FavouritePlacesUITests.swift */; };
 		302E4E2A282296F4008D0370 /* FavouritePlacesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E29282296F4008D0370 /* FavouritePlacesUITestsLaunchTests.swift */; };
-		302E4E3A28229C94008D0370 /* FavouritePlaces+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E3628229C94008D0370 /* FavouritePlaces+CoreDataClass.swift */; };
-		302E4E3B28229C94008D0370 /* FavouritePlaces+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E3728229C94008D0370 /* FavouritePlaces+CoreDataProperties.swift */; };
-		302E4E3C28229C94008D0370 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E3828229C94008D0370 /* Place+CoreDataClass.swift */; };
-		302E4E3D28229C94008D0370 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E3928229C94008D0370 /* Place+CoreDataProperties.swift */; };
+		302E4E3F28229F2A008D0370 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E3E28229F2A008D0370 /* MasterView.swift */; };
+		302E4E412822A0F1008D0370 /* FavouritePlaces+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +54,8 @@
 		302E4E3728229C94008D0370 /* FavouritePlaces+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FavouritePlaces+CoreDataProperties.swift"; path = "FavouritePlaces/Generated/FavouritePlaces+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		302E4E3828229C94008D0370 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Place+CoreDataClass.swift"; path = "FavouritePlaces/Generated/Place+CoreDataClass.swift"; sourceTree = "<group>"; };
 		302E4E3928229C94008D0370 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Place+CoreDataProperties.swift"; path = "FavouritePlaces/Generated/Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		302E4E3E28229F2A008D0370 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavouritePlaces+ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				302E4E07282296F3008D0370 /* FavouritePlacesApp.swift */,
+				302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */,
 				302E4E09282296F3008D0370 /* ContentView.swift */,
+				302E4E3E28229F2A008D0370 /* MasterView.swift */,
 				302E4E0B282296F4008D0370 /* Assets.xcassets */,
 				302E4E10282296F4008D0370 /* Persistence.swift */,
 				302E4E12282296F4008D0370 /* FavouritePlaces.xcdatamodeld */,
@@ -275,12 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E4E412822A0F1008D0370 /* FavouritePlaces+ViewModel.swift in Sources */,
 				302E4E11282296F4008D0370 /* Persistence.swift in Sources */,
-				302E4E3D28229C94008D0370 /* Place+CoreDataProperties.swift in Sources */,
-				302E4E3B28229C94008D0370 /* FavouritePlaces+CoreDataProperties.swift in Sources */,
-				302E4E3C28229C94008D0370 /* Place+CoreDataClass.swift in Sources */,
+				302E4E3F28229F2A008D0370 /* MasterView.swift in Sources */,
 				302E4E14282296F4008D0370 /* FavouritePlaces.xcdatamodeld in Sources */,
-				302E4E3A28229C94008D0370 /* FavouritePlaces+CoreDataClass.swift in Sources */,
 				302E4E0A282296F3008D0370 /* ContentView.swift in Sources */,
 				302E4E08282296F3008D0370 /* FavouritePlacesApp.swift in Sources */,
 			);
