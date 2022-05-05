@@ -17,9 +17,7 @@ struct MasterView: View {
                 HStack {
                     Image(systemName: "map")
                     NavigationLink("\(place.name ?? "")", destination: DetailView())
-            
                 }
-
             }
             .onDelete(perform: deleteItems)
         }

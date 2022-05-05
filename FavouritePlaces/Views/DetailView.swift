@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
-    @Environment(\.managedObjectContext) var viewContext
     
+    //I should be able to use these to show the locations details
+    //I just dont know how
     @FetchRequest(
         entity: Place.entity(),
         sortDescriptors: [
@@ -21,7 +22,8 @@ struct DetailView: View {
         ]
     )
     private var selectedPlace: FetchedResults<Place>
-
+    
+    @Environment(\.managedObjectContext) var viewContext
     @Environment(\.editMode) var editMode
 //    @State var textFieldText: String = ""
 //    @State var url: String = ""
@@ -29,13 +31,14 @@ struct DetailView: View {
 //    @State var long: Float = 0.0
 //    @State var lat: Float = 0.0
     var body: some View {
-
+        
         List {
             Text("Hi")
         }
         .navigationTitle("Location")
         .navigationBarItems(trailing: EditButton())
         
+        //I dont want to use this method - there has to be a better way
 //        if editMode?.wrappedValue == .active {
 //            List {
 //                TextField("Location", text: $titleTextFieldText)
