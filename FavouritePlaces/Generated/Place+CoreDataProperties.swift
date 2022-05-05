@@ -17,6 +17,10 @@ extension Place {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var url: String?
+    @NSManaged public var desc: String?
+    @NSManaged public var long: Float?
+    @NSManaged public var lat: Float?
     @NSManaged public var favourite: FavouritePlaces?
 
 }

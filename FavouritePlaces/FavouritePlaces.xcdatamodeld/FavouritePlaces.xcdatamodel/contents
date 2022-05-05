@@ -5,11 +5,15 @@
         <relationship name="place" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Place" inverseName="favourite" inverseEntity="Place"/>
     </entity>
     <entity name="Place" representedClassName="Place" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="long" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="url" optional="YES" attributeType="String"/>
         <relationship name="favourite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FavouritePlaces" inverseName="place" inverseEntity="FavouritePlaces"/>
     </entity>
     <elements>
         <element name="FavouritePlaces" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="Place" positionX="171.890625" positionY="-14.19595336914062" width="128" height="73"/>
+        <element name="Place" positionX="171.890625" positionY="-14.19595336914062" width="128" height="119"/>
     </elements>
 </model>
