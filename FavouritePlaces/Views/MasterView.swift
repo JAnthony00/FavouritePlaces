@@ -14,14 +14,16 @@ struct MasterView: View {
     var body: some View {
         List {
             ForEach(favouritePlaces.placeArray) { place in
-                NavigationLink {
-                    Text("\(place.name ?? "")")
-                } label: {
-                    Image(systemName: "plus")
+                HStack {
+                    Image(systemName: "map")
+                    NavigationLink("\(place.name ?? "")", destination: DetailView())
+            
                 }
+
             }
             .onDelete(perform: deleteItems)
         }
+        .navigationTitle("Favourite Places")
         .navigationBarItems(
             leading: EditButton(),
             trailing: Button(action: addItem) {
@@ -32,7 +34,7 @@ struct MasterView: View {
     private func addItem() {
         withAnimation {
             let place = Place(context: viewContext)
-            place.name = "Location # \(favouritePlaces.placeArray.count + 1)"
+            place.name = "Location"
             var places = favouritePlaces.placeArray
             places.append(place)
             favouritePlaces.place = NSOrderedSet(array: places)

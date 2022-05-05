@@ -14,6 +14,7 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \FavouritePlaces.name, ascending: true)],
         animation: .default)
+    
     private var favouritePlaces: FetchedResults<FavouritePlaces>
 
     var body: some View {

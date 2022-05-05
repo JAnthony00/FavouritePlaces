@@ -18,6 +18,7 @@
 		302E4E2A282296F4008D0370 /* FavouritePlacesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E29282296F4008D0370 /* FavouritePlacesUITestsLaunchTests.swift */; };
 		302E4E412822A0F1008D0370 /* FavouritePlaces+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */; };
 		30F1D2AE2823D0D700276C7D /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1D2AD2823D0D700276C7D /* MasterView.swift */; };
+		30F1D2B02823D6BF00276C7D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1D2AF2823D6BF00276C7D /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		302E4E3928229C94008D0370 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Place+CoreDataProperties.swift"; path = "FavouritePlaces/Generated/Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavouritePlaces+ViewModel.swift"; sourceTree = "<group>"; };
 		30F1D2AD2823D0D700276C7D /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		30F1D2AF2823D6BF00276C7D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				302E4E07282296F3008D0370 /* FavouritePlacesApp.swift */,
-				302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */,
-				30F1D2AD2823D0D700276C7D /* MasterView.swift */,
-				302E4E09282296F3008D0370 /* ContentView.swift */,
+				30F1D2B12823FC0000276C7D /* Views */,
 				302E4E0B282296F4008D0370 /* Assets.xcassets */,
 				302E4E10282296F4008D0370 /* Persistence.swift */,
 				302E4E12282296F4008D0370 /* FavouritePlaces.xcdatamodeld */,
@@ -145,6 +145,17 @@
 				302E4E29282296F4008D0370 /* FavouritePlacesUITestsLaunchTests.swift */,
 			);
 			path = FavouritePlacesUITests;
+			sourceTree = "<group>";
+		};
+		30F1D2B12823FC0000276C7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				302E4E402822A0F1008D0370 /* FavouritePlaces+ViewModel.swift */,
+				30F1D2AF2823D6BF00276C7D /* DetailView.swift */,
+				30F1D2AD2823D0D700276C7D /* MasterView.swift */,
+				302E4E09282296F3008D0370 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				30F1D2AE2823D0D700276C7D /* MasterView.swift in Sources */,
 				302E4E412822A0F1008D0370 /* FavouritePlaces+ViewModel.swift in Sources */,
 				302E4E11282296F4008D0370 /* Persistence.swift in Sources */,
+				30F1D2B02823D6BF00276C7D /* DetailView.swift in Sources */,
 				302E4E14282296F4008D0370 /* FavouritePlaces.xcdatamodeld in Sources */,
 				302E4E0A282296F3008D0370 /* ContentView.swift in Sources */,
 				302E4E08282296F3008D0370 /* FavouritePlacesApp.swift in Sources */,
